@@ -1,5 +1,4 @@
 # yfinaice installation
-pip install yfinance -q
 
 # =======================
 # importing modules
