@@ -1,9 +1,6 @@
-# yfinaice installation
-
 # =======================
 # importing modules
-
-import yfinance as yf
+# =======================
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.ensemble import IsolationForest
@@ -14,7 +11,7 @@ import streamlit as st
 # =======================
 st.set_page_config(page_title="Stock Anomaly Detection", layout="wide")
 
-st.title("Stock Anomaly Detection using Isolation Forest")
+st.title("Stock Anomaly Detection using Isolation Forest for Enugu State Data Science Dominion Group")
 
 # Sidebar inputs
 st.sidebar.header("Configuration")
