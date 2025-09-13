@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.ensemble import IsolationForest
 import streamlit as st
+import yfinance as yf   
 
 # =======================
 # Streamlit App UI
