@@ -11,7 +11,7 @@ import yfinance as yf
 # Streamlit App UI
 # =======================
 st.set_page_config(page_title="Stock Anomaly Detection", layout="wide")
-st.image("stockpulse.jpg")
+st.image("/streamlit/stockpulse.jpg")
 st.title("Stock Anomaly Detection using Isolation Forest for Enugu State Data Science Dominion Group")
 
 # Sidebar inputs
