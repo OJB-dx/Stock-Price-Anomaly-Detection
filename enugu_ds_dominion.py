@@ -32,13 +32,13 @@ if st.sidebar.button("Run Detection"):
     df['anomaly_if'] = iso.fit_predict(df[features])  # -1 = anomaly, 1 = normal
     anomalies = df[df['anomaly_if'] == -1]
 
-    df["30_day_ma"] = df["Close"].rolling(window=30).mean()
+    df["21_day_ma"] = df["Close"].rolling(window=21).mean()
     
     # Plot results
     fig, ax = plt.subplots(figsize=(12,6))
     ax.plot(df.index, df['Close'], label="Close Price", color="blue")
     ax.scatter(anomalies.index, anomalies['Close'], color="red", marker="x", s=100, label="Anomaly")
-    ax.plot(df.index, df['30_day_ma'], label="30-Day MA", color="orange", linestyle="--")
+    ax.plot(df.index, df['21_day_ma'], label="21-Day MA", color="orange", linestyle="--")
     ax.set_title(f"Anomaly Detection on {ticker} Stock ({start_date} → {end_date})")
     ax.set_xlabel("Date")
     ax.set_ylabel("Close Price")
