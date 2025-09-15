@@ -37,7 +37,7 @@ if st.sidebar.button("Run Detection"):
     # Plot results
     fig, ax = plt.subplots(figsize=(12,6))
     ax.plot(df.index, df['Close'], label="Close Price", color="blue")
-    ax.scatter(anomalies.index, anomalies['Close'], color="red", marker="x", s=100, label="Anomaly")
+    ax.scatter(anomalies.index, anomalies['Close'], color="red", marker="x", s=30, label="Anomaly")
     ax.plot(df.index, df['21_day_ma'], label="21-Day MA", color="orange", linestyle="--")
     ax.set_title(f"Anomaly Detection on {ticker} Stock ({start_date} → {end_date})")
     ax.set_xlabel("Date")
