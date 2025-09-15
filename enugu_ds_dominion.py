@@ -44,7 +44,7 @@ if st.sidebar.button("Run Detection"):
     ax.set_ylabel("Close Price")
     ax.legend()
 
-    # Show chart + anomalies table + 30 Days Moving Averages
+    # Show chart + anomalies table + 21 Days Moving Averages
     st.pyplot(fig)
     st.subheader("📌 Detected Anomalies")
     st.dataframe(anomalies[['Open', 'High', 'Low', 'Close', 'Volume']])
