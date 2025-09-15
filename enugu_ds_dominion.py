@@ -32,7 +32,7 @@ if st.sidebar.button("Run Detection"):
     df['anomaly_if'] = iso.fit_predict(df[features])  # -1 = anomaly, 1 = normal
     anomalies = df[df['anomaly_if'] == -1]
 
-    df["20_day_ma"] = df["Close"].rolling(window=30).mean()
+    df["30_day_ma"] = df["Close"].rolling(window=30).mean()
     
     # Plot results
     fig, ax = plt.subplots(figsize=(12,6))
