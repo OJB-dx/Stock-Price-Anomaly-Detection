@@ -17,7 +17,7 @@ st.title("Stock Anomaly Detection using Isolation Forest for Enugu State Data Sc
 # Sidebar inputs
 st.sidebar.header("Configuration")
 ticker = st.sidebar.text_input("Enter stock ticker (e.g., CVX, AAPL, TSLA):", "CVX")
-start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2019-01-01"))
+start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2022-01-01"))
 end_date = st.sidebar.date_input("End Date", pd.to_datetime("2025-01-01"))
 contamination = st.sidebar.slider("Anomaly proportion (contamination)", 0.01, 0.1, 0.02, 0.01)
 
